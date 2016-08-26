@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="./css/style.css" rel="stylesheet" />
+</head>
+ 
+ <body class="bs-docs-home">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+    <a href="http://blog.getbootstrap.com/2015/12/08/bootstrap-4-alpha-2/" class="v4-tease">Aww yeah, Bootstrap 4 is coming!</a>
+
+    <!-- Docs master nav -->
+    {% include nav/main.html %}
+
+    <!-- Page content of course! -->
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+<body>
+ 
+ 
+    <div id="envoltura">
+        <div id="contenedor">
+<div id="cabecera" >
+                <img src="./img/presentacion.png">
+            </div>
+ 
+            <div id="cuerpo">
+                <form id="form-login" action="" method="post" autocomplete="off">
+                    <!--A saber, el atributo for funciona como el id.-->
+                    <!--ejemplo <label for="usuario">Usuario:</label>-->
+                    <!--required es nuevo en html5, si el campo está vacío te avisa, pero cuidado, no valida la información-->
+                    <p><label >Usuario:</label></p>
+                        <input name="users" type="text" id="usuario" placeholder="Ingresa Usuario" autofocus="" required=""></p>
+ 
+                    <p><label>Contraseña:</label></p>
+                        <input name="password" type="password" id="contrasenia" placeholder="Ingresa Password" required=""></p>
+
+                    <p><label>Gmail:</label></p>
+                        <input name="correo" type="text" id="correo" placeholder="Ingresa Gmail" required=""></p>
+
+                        <p><label>Rol:</label></p>
+                        <input name="rol" type="text" id="correo" placeholder="Ingresa rol" required=""></p>
+
+ 
+                    <p id="bot"><input type="submit" id="submit" name="submit" value="Ingresar" class="boton"></p>
+                </form>
+
+            </div><!--fin cuerpo-->
+
+            <!-- registro-->
+
+            <div id="registrar">
+        <a href="./php/register.php"</a>Registrarse</a>
+</div> <!-- fin opcion-->
+ 
+
+            <div id="pie">Sistema de Login Y Registro</div>
+
+        </div><!-- fin contenedor -->
+    </div><!--fin envoltura-->
+</body>
+ 
+</html>
